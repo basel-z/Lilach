@@ -1,0 +1,30 @@
+Order date -----  ----- Order id ----- ----- Item ----- ----- Total Cost ----- ----- Delivery Location
+ | 2020-01-20T12:28:56.845278100 | 1 | 1 | 81.0 | mshotaf
+ | 2020-01-20T12:32:59.162536100 | 2 | 1 | 216.0 | m3onot
+ | 2020-01-20T12:35:50.707131 | 3 | 1 | 204.0 | m3onot
+ |  | 17 | 1 | 500 | 
+COMPLAINS REPORT:
+Complain date: 0701202000 Complain id: 9 Complain title: dfzgchjkbl Store adress:  Phone: 324 Email: z.basel324@gmail.com
+Complain content: xgcvbn
+------------------------------------
+Complain date: 0101202000 Complain id: 10 Complain title:  Store adress: haifa Phone: 0502203232 Email: sdsads@dsadas.ewe
+Complain content: 
+------------------------------------
+Complain date: 0601202000 Complain id: 11 Complain title: 11 Store adress: s Phone: ss Email: ds
+Complain content: 11
+------------------------------------
+Complain date: 1401202000 Complain id: 12 Complain title:  Store adress: haifa Phone: 0502203232 Email: majd@gmail.com
+Complain content: 
+------------------------------------
+Complain date: 1401202000 Complain id: 13 Complain title: 4 Store adress: haif Phone: hbvjh Email: mdjasd`
+Complain content: 4
+------------------------------------
+Complain date: 1401202000 Complain id: 14 Complain title:  Store adress: haifa Phone: 87848 Email: dsakdsa
+Complain content: 
+------------------------------------
+Complain date: 2201202000 Complain id: 15 Complain title: 11 Store adress: ss Phone: ss Email: ss
+Complain content: 1
+------------------------------------
+Complain date: 0401202000 Complain id: 16 Complain title: ur register doesnt work Store adress: 1 Phone: 123132 Email: yousfatyee@gmail.com
+Complain content: title says it all
+------------------------------------

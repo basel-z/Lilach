@@ -1,0 +1,133 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.scene.chart.CategoryAxis?>-->
+<!--<?import javafx.scene.chart.NumberAxis?>-->
+<!--<?import javafx.scene.chart.StackedBarChart?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.DatePicker?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.Menu?>-->
+<!--<?import javafx.scene.control.MenuBar?>-->
+<!--<?import javafx.scene.control.MenuItem?>-->
+<!--<?import javafx.scene.control.ScrollBar?>-->
+<!--<?import javafx.scene.control.ScrollPane?>-->
+<!--<?import javafx.scene.control.TableColumn?>-->
+<!--<?import javafx.scene.control.TableView?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.control.ToolBar?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+
+<!--<AnchorPane fx:id="main_anchor_pane" prefHeight="733.0" prefWidth="971.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.lil.client.lilachgui.ViewReportsController">-->
+<!--    <children>-->
+<!--        <Button fx:id="view_reports_btn" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_reports_btn" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="View Reports">-->
+<!--            <font>-->
+<!--                <Font size="10.0" />-->
+<!--            </font>-->
+<!--        </Button>-->
+
+<!--        <Button fx:id="login_btn" layoutX="758.0" layoutY="32.0" mnemonicParsing="false" onAction="#handle_login_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #5cb85c;" text="Log-in" />-->
+<!--        <MenuBar layoutX="-4.0" prefHeight="30.0" prefWidth="957.0">-->
+<!--            <menus>-->
+<!--                <Menu mnemonicParsing="false" text="File">-->
+<!--                    <items>-->
+<!--                        <MenuItem mnemonicParsing="false" text="Close" />-->
+<!--                    </items>-->
+<!--                </Menu>-->
+<!--                <Menu mnemonicParsing="false" text="Edit">-->
+<!--                    <items>-->
+<!--                        <MenuItem mnemonicParsing="false" text="Delete" />-->
+<!--                    </items>-->
+<!--                </Menu>-->
+<!--                <Menu mnemonicParsing="false" text="Help">-->
+<!--                    <items>-->
+<!--                        <MenuItem mnemonicParsing="false" text="About" />-->
+<!--                    </items>-->
+<!--                </Menu>-->
+<!--            </menus>-->
+<!--        </MenuBar>-->
+<!--        <ScrollBar layoutX="953.0" layoutY="4.0" orientation="VERTICAL" prefHeight="727.0" prefWidth="17.0" />-->
+<!--        <AnchorPane layoutX="8.0" layoutY="32.0" prefHeight="98.0" prefWidth="128.0">-->
+<!--            <children>-->
+<!--                <ImageView fx:id="logo" fitHeight="105.0" fitWidth="127.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                    <image>-->
+<!--                        <Image url="@assets/LilachLogo.png" />-->
+<!--                    </image>-->
+<!--                </ImageView>-->
+<!--            </children>-->
+<!--        </AnchorPane>-->
+<!--        <Button fx:id="complain_btn" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_complain_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text="Complain">-->
+<!--            <font>-->
+<!--                <Font size="10.0" />-->
+<!--            </font>-->
+<!--        </Button>-->
+<!--        <Button fx:id="manageusers_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_manage_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #1E90FF;" text="Manage Users">-->
+<!--            <font>-->
+<!--                <Font size="10.0" />-->
+<!--            </font>-->
+<!--        </Button>-->
+<!--        <Button fx:id="menu_btn" layoutX="146.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_menu_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text=" Menu" />-->
+<!--        <Button fx:id="myorders_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_my_order_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text="My Orders" />-->
+<!--        <ImageView fx:id="cart_id" fitHeight="37.0" fitWidth="41.0" layoutX="146.0" layoutY="30.0" onMouseClicked="#handle_cart_click" pickOnBounds="true" preserveRatio="true">-->
+<!--            <image>-->
+<!--                <Image url="@assets/image-removebg-preview.png" />-->
+<!--            </image>-->
+<!--        </ImageView>-->
+<!--        <Button fx:id="signout_btn1" layoutX="850.0" layoutY="32.0" mnemonicParsing="false" onAction="#handle_signout_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #1E90FF;" text="Sign-Out" />-->
+<!--        <Button fx:id="sigup_btn" layoutX="850.0" layoutY="32.0" mnemonicParsing="false" onAction="#handle_signup_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #1E90FF;" text="Sign-Up" />-->
+<!--        <Button fx:id="block_Users" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_block_users" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: red;" text="Block Users" visible="false">-->
+<!--            <font>-->
+<!--                <Font size="10.0" />-->
+<!--            </font>-->
+<!--        </Button>-->
+<!--      <ToolBar layoutX="15.0" layoutY="189.0" prefHeight="45.0" prefWidth="500.0">-->
+<!--        <items>-->
+<!--            <AnchorPane prefHeight="33.0" prefWidth="480.0">-->
+<!--               <children>-->
+<!--                  <DatePicker fx:id="date_picker" layoutX="61.0" layoutY="3.0" prefHeight="27.0" prefWidth="148.0" />-->
+<!--                <Button fx:id="search_btn" layoutX="405.0" layoutY="3.0" mnemonicParsing="false" onAction="#handle_search_btn" text="Search" />-->
+<!--                  <TextField fx:id="store_id_comp" layoutX="310.0" layoutY="2.0" prefHeight="13.0" prefWidth="61.0" />-->
+<!--                  <Label layoutX="239.0" layoutY="7.0" prefHeight="17.0" prefWidth="54.0" text="Store ID" />-->
+<!--                  <Label layoutX="9.0" layoutY="3.0" prefHeight="27.0" prefWidth="47.0" text="Date:" />-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--        </items>-->
+<!--      </ToolBar>-->
+<!--      <ScrollPane layoutX="14.0" layoutY="233.0" prefHeight="486.0" prefWidth="500.0">-->
+<!--        <content>-->
+<!--          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="501.0">-->
+<!--               <children>-->
+<!--                  <TableView fx:id="reports_table" layoutX="-2.0" layoutY="-3.0" prefHeight="486.0" prefWidth="486.0">-->
+<!--                    <columns>-->
+<!--                      <TableColumn fx:id="rep_name_cul" prefWidth="220.0" text="Report Name/Date" />-->
+<!--                      <TableColumn fx:id="report_type_cul" minWidth="0.0" prefWidth="96.0" text="Report Type" />-->
+<!--                        <TableColumn fx:id="view_cont_cul" prefWidth="101.0" text="View Content" />-->
+<!--                        <TableColumn fx:id="compare_cul" prefWidth="68.0" text="Compare" />-->
+<!--                    </columns>-->
+<!--                  </TableView>-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--        </content>-->
+<!--      </ScrollPane>-->
+<!--      <Button fx:id="compare_btn" layoutX="520.0" layoutY="200.0" mnemonicParsing="false" onAction="#handle_compare_btn" prefHeight="27.0" prefWidth="77.0" text="Compare" />-->
+<!--      <StackedBarChart fx:id="income_chart" layoutX="527.0" layoutY="232.0" prefHeight="249.0" prefWidth="415.0" style="-fx-background-color: #ADD8E6;" title="Compre Income">-->
+<!--        <xAxis>-->
+<!--          <CategoryAxis side="BOTTOM" />-->
+<!--        </xAxis>-->
+<!--        <yAxis>-->
+<!--          <NumberAxis side="LEFT" />-->
+<!--        </yAxis>-->
+<!--      </StackedBarChart>-->
+<!--      <StackedBarChart fx:id="complains_chart" layoutX="527.0" layoutY="469.0" prefHeight="249.0" prefWidth="415.0" style="-fx-background-color: #ADD8E6;" title="Compre Complains">-->
+<!--         <xAxis>-->
+<!--            <CategoryAxis side="BOTTOM" />-->
+<!--         </xAxis>-->
+<!--         <yAxis>-->
+<!--            <NumberAxis side="LEFT" />-->
+<!--         </yAxis>-->
+<!--      </StackedBarChart>-->
+
+<!--    </children>-->
+<!--</AnchorPane>-->

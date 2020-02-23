@@ -1,0 +1,8 @@
+.project
+.settings/
+target/**
+target/classes
+*.class
+src/lil/models/orderTest.java
+src/lil/models/OrderTest.java
+src/lil/common/sendSMS.java

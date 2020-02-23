@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="971.0" style="-fx-background-color: #FFFAF0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.lil.client.lilachgui.unblockUserController">
+    <children>
+        <Button fx:id="view_reports_btn" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_reports_btn" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="View Reports">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+
+        <ImageView fx:id="bg_image" fitHeight="733.0" fitWidth="971.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/main_background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="login_btn" layoutX="757.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_login_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Log-in" />
+        <AnchorPane layoutX="8.0" layoutY="32.0" prefHeight="98.0" prefWidth="128.0">
+            <children>
+                <ImageView fx:id="logo" fitHeight="105.0" fitWidth="127.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/LilachLogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="14.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="926.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <Text fx:id="message" fill="#b24040" layoutX="159.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="604.0" layoutY="413.0" mnemonicParsing="false" onAction="#handle_pay_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Pay !" />
+            <Text fx:id="messageForError" layoutX="342.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children></Pane>
+         <Button fx:id="complain_btn" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_complain_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="Complain">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageusers_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_manage_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="Manage Users">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu_btn" layoutX="146.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_menu_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text=" Menu" />
+      <Button fx:id="myorders_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_my_order_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="My Orders" />
+      <ImageView fx:id="cart_id" fitHeight="37.0" fitWidth="41.0" layoutX="622.0" layoutY="20.0" onMouseClicked="#handle_cart_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/image-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signout_btn1" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signout_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #ab2b54;" text="Sign-Out" />
+      <Button fx:id="sigup_btn" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signup_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Sign-Up" />
+       <Button fx:id="block_Users" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_block_users" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: red;" text="Block Users" visible="false">
+           <font>
+               <Font size="10.0" />
+           </font>
+       </Button>
+      <Label fx:id="finish_order_label" layoutX="543.0" layoutY="30.0" text="Finish Order:" />
+   </children>
+</AnchorPane>

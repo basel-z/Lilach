@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_anchor_pane" prefHeight="733.0" prefWidth="971.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.lil.client.lilachgui.ManageUsersCont">
+   <children>
+       <Button fx:id="view_reports_btn" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_reports_btn" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="View Reports">
+           <font>
+               <Font size="10.0" />
+           </font>
+       </Button>
+
+       <ImageView fx:id="bg_image" fitHeight="733.0" fitWidth="971.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/main_background.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="clients_pane" layoutX="14.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="934.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <ScrollPane prefHeight="574.0" prefWidth="934.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="934.0">
+                     <children>
+                        <TableView fx:id="users_table_id" prefHeight="574.0" prefWidth="934.0" style="-fx-background-color: #FFFAF0;">
+                          <columns>
+                            <TableColumn fx:id="name_col" prefWidth="130.39999103546143" text="Name:" />
+                            <TableColumn fx:id="id_col" prefWidth="129.6000518798828" text="ID:" />
+                              <TableColumn fx:id="balance_col" minWidth="0.0" prefWidth="137.59991455078125" text="Balance" />
+                              <TableColumn fx:id="email_col" prefWidth="336.00006103515625" text="E-mail:" />
+                              <TableColumn fx:id="phone_col" prefWidth="187.99993896484375" text="Phone number:" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></Pane>
+     <Button fx:id="sigup_btn" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signup_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Sign-Up" />
+       <Button fx:id="login_btn" layoutX="757.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_login_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Log-in" />
+      <AnchorPane layoutX="8.0" layoutY="32.0" prefHeight="98.0" prefWidth="128.0">
+         <children>
+            <ImageView fx:id="logo" fitHeight="105.0" fitWidth="127.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/LilachLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="complain_btn" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_complain_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="Complain">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+    <Button fx:id="manageusers_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_manage_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="Manage Users">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu_btn" layoutX="146.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_menu_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text=" Menu" />
+      <Button fx:id="myorders_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_my_order_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="My Orders" />
+      <ImageView fx:id="cart_id" fitHeight="37.0" fitWidth="41.0" layoutX="622.0" layoutY="20.0" onMouseClicked="#handle_cart_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/image-removebg-preview.png" />
+         </image>
+      </ImageView>
+     <Button fx:id="signout_btn1" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signout_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #ab2b54;" text="Sign-Out" />
+     
+      <Button fx:id="clients_butt" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_view_clients_butt" prefHeight="46.0" prefWidth="55.0" style="-fx-background-color: #db7092;" text="Clients" />
+      <Button fx:id="employees_butt" layoutX="326.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_view_employees_butt" prefHeight="46.0" prefWidth="70.0" style="-fx-background-color: #db7092;" text="Employee" />
+      <Pane fx:id="employees_pane" layoutX="14.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="934.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <ScrollPane prefHeight="574.0" prefWidth="934.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="933.0">
+                     <children>
+                        <TableView fx:id="employees_table_id" prefHeight="574.0" prefWidth="933.0" style="-fx-background-color: #FFFAF0;">
+                           <columns>
+                              <TableColumn fx:id="employees_role_col" prefWidth="96.80001544952393" text="Role:" />
+                              <TableColumn fx:id="employee_name_col" prefWidth="160.8000030517578" text="Name:" />
+                              <TableColumn fx:id="employee_id_col" prefWidth="139.20001220703125" text="ID:" />
+                              <TableColumn fx:id="employee_email_col" prefWidth="334.4000244140625" text="E-mail:" />
+                              <TableColumn fx:id="employee_phone_col" prefWidth="187.20001220703125" text="Phone number:">
+                               
+                              </TableColumn>
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane fx:id="changes_pane" layoutX="14.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="916.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <TextField fx:id="current_phone_txt" layoutX="258.0" layoutY="141.0" />
+            <TextField fx:id="current_bank_txt" layoutX="258.0" layoutY="179.0" />
+            <TextField fx:id="current_email_txt" layoutX="258.0" layoutY="220.0" />
+            <TextField fx:id="current_password_txt" layoutX="258.0" layoutY="258.0" />
+            <TextField fx:id="current_balance_txt" layoutX="258.0" layoutY="334.0" />
+            <TextField fx:id="current_address_txt" layoutX="258.0" layoutY="298.0" />
+            <TextField fx:id="current_credit_txt" layoutX="258.0" layoutY="368.0" />
+            <ComboBox fx:id="role_combobox" layoutX="525.0" layoutY="141.0" prefWidth="150.0" />
+            <ComboBox fx:id="subscription_combobox" layoutX="525.0" layoutY="141.0" prefWidth="150.0" />
+            <CheckBox fx:id="block_checkbox" layoutX="592.0" layoutY="224.0" mnemonicParsing="false" />
+            <Label layoutX="176.0" layoutY="141.0" prefHeight="25.0" prefWidth="70.0" text="Phone:" />
+            <Label layoutX="167.0" layoutY="179.0" prefHeight="25.0" prefWidth="79.0" text="Bank Account:" />
+            <Label layoutX="176.0" layoutY="220.0" prefHeight="25.0" prefWidth="70.0" text="E-mail:" />
+            <Label layoutX="176.0" layoutY="258.0" prefHeight="25.0" prefWidth="70.0" text="Password:" />
+            <Label fx:id="balance_lbl" layoutX="176.0" layoutY="334.0" prefHeight="25.0" prefWidth="70.0" text="Balance:" />
+            <Label layoutX="176.0" layoutY="298.0" prefHeight="25.0" prefWidth="70.0" text="Address:" />
+            <Label fx:id="card_lbl" layoutX="176.0" layoutY="368.0" prefHeight="25.0" prefWidth="70.0" text="CreditCard:" />
+            <Label fx:id="role_lbl" layoutX="423.0" layoutY="141.0" prefHeight="25.0" prefWidth="70.0" text="Role:" />
+            <Label fx:id="block_lbl" layoutX="436.0" layoutY="220.0" prefHeight="25.0" prefWidth="70.0" text="Block:" />
+            <Label fx:id="sub_lbl" layoutX="427.0" layoutY="141.0" prefHeight="25.0" prefWidth="79.0" text="Subscription:" />
+            <ComboBox fx:id="store_combobox" layoutX="525.0" layoutY="179.0" prefWidth="150.0" />
+            <Label layoutX="436.0" layoutY="179.0" prefHeight="25.0" prefWidth="70.0" text="Store:" />
+            
+                  <Button fx:id="save_btn" layoutX="531.0" layoutY="300.0" mnemonicParsing="false" onAction="#handle_submit_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #1E90FF;" text="Save">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            
+                  <ImageView fx:id="back_arrow_icon" fitHeight="37.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/back_arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+    <Button fx:id="block_Users" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_block_users" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: red;" text="Block Users" visible="false">
+            <font>
+               <Font size="10.0" />
+           </font>
+       </Button>
+      <Label fx:id="finish_order_label" layoutX="543.0" layoutY="30.0" text="Finish Order:" />
+  
+   </children>
+   
+</AnchorPane>

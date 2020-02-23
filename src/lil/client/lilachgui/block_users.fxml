@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.lil.client.lilachgui.BlockUsersController">
+    <children>
+    <ImageView fx:id="bg_image" fitHeight="733.0" fitWidth="971.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/main_background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="login_btn" layoutX="757.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_login_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Log-in" />
+        <AnchorPane layoutX="8.0" layoutY="32.0" prefHeight="98.0" prefWidth="128.0">
+            <children>
+                <ImageView fx:id="logo" fitHeight="105.0" fitWidth="127.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/LilachLogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="9.0" layoutY="149.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="951.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <Text fill="#c92626" layoutX="369.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Check User to block">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="users_with_balance" layoutX="649.0" layoutY="93.0" onAction="#handle_user_change" prefWidth="150.0" promptText="User name" />
+            <Text fx:id="user_balance" layoutX="608.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" wrappingWidth="40.60546875" />
+            <Button layoutX="681.0" layoutY="194.0" mnemonicParsing="false" onAction="#handle_block_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #ff0000;" text="Block" />
+            <Text fx:id="messageToManger" fill="RED" layoutX="705.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children></Pane>
+        <Button fx:id="complain_btn" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_complain_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="Complain">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageusers_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_manage_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="Manage Users">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu_btn" layoutX="146.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_menu_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text=" Menu" />
+      <Button fx:id="myorders_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_my_order_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="My Orders" />
+      <ImageView fx:id="cart_id" fitHeight="37.0" fitWidth="41.0" layoutX="622.0" layoutY="20.0" onMouseClicked="#handle_cart_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/image-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signout_btn1" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signout_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #ab2b54;" text="Sign-Out" />
+      <Button fx:id="sigup_btn" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signup_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #db7092;" text="Sign-Up" />
+       <Button fx:id="block_Users" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_block_users" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: red;" text="Block Users" visible="false">
+         <font>
+               <Font size="10.0" />
+           </font>
+       </Button>
+      <Label fx:id="finish_order_label" layoutX="543.0" layoutY="30.0" text="Finish Order:" />
+        <Button fx:id="view_reports_btn" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_reports_btn" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="View Reports">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+
+    </children>
+</AnchorPane>

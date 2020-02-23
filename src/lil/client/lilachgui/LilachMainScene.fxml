@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main_anchor_pane" prefHeight="733.0" prefWidth="971.0" style="-fx-background-color: #FFFAF0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.lil.client.lilachgui.MainPageCont">
+   <children>
+     <ImageView fx:id="bg_image" fitHeight="733.0" fitWidth="971.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/main_background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="login_btn" layoutX="424.0" layoutY="432.0" mnemonicParsing="false" onAction="#handle_login_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093 #DB7093;" text="Log-in" />
+      <AnchorPane layoutX="8.0" layoutY="32.0">
+         <children>
+            <ImageView fx:id="logo" fitHeight="105.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/LilachLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="complain_btn" layoutX="400.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_complain_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text="Complain">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageusers_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_manage_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #1E90FF;" text="Manage Users">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu_btn" layoutX="423.0" layoutY="373.0" mnemonicParsing="false" onAction="#handle_menu_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text=" Menu" />
+      <Button fx:id="myorders_btn" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_my_order_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text="My Orders" />
+      <ImageView fx:id="cart_id" fitHeight="37.0" fitWidth="41.0" layoutX="630.0" layoutY="20.0" onMouseClicked="#handle_cart_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/image-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signout_btn1" layoutX="847.0" layoutY="16.0" mnemonicParsing="false" onAction="#handle_signout_butt" prefHeight="45.0" prefWidth="86.0" style="-fx-background-color: #DB7093;" text="Sign-Out" />
+      <Button fx:id="sigup_btn" layoutX="423.0" layoutY="489.0" mnemonicParsing="false" onAction="#handle_signup_butt" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #DB7093;" text="Sign-Up" />
+       <Button fx:id="block_Users" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_block_users" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: red;" text="Block Users" visible="false">
+
+           <font>
+               <Font size="10.0" />
+           </font>
+       </Button>
+       <Button fx:id="view_reports_btn" layoutX="527.0" layoutY="87.0" mnemonicParsing="false" onAction="#handle_reports_btn" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #db7092;" text="View Reports">
+           <font>
+               <Font size="10.0" />
+           </font>
+       </Button>
+       <Text fill="PALEVIOLETRED" layoutX="288.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome to Lilach store." textAlignment="CENTER" wrappingWidth="394.98016357421875">
+         <font>
+            <Font name="Bookman Old Style Bold" size="34.0" />
+         </font>
+      </Text>
+       <Label fx:id="finish_order_label" layoutX="543.0" layoutY="30.0" text="Finish Order:" />
+    
+   </children>
+</AnchorPane>

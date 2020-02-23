@@ -1,0 +1,13 @@
+Quarter report for last 3 months. Date updated: 01/02/2020
+
+Monthly Stores Income: 
+Date     Income
+01012020         45000.0
+01112019         50000.0
+01122019         40000.0
+
+Total network income: 135000.0
+Income Ratio: 
+First/Second: 1.1111111111111112 Third/Second: 0.8
+
+All monthly Reports:
